@@ -45,7 +45,7 @@ stored as comma-separated values.
 
 ## Step 2: Data Analysis
  
-1.  Used Pivot Tables to group and summarize data by:
+### Used Pivot Tables to group and summarize data by:
  * Product category
  * Ratings
  * Discount percentage
@@ -56,6 +56,25 @@ stored as comma-separated values.
  * AVERAGE() for mean rating and pricing
  * Percentage calculations for discount and performance insights
  
+ ## Dashboard Creation
+ ### Designed an interactive and visually appealing Excel dashboard
+ Added:
  
+  * Charts (bar, pie, line) for key insights
+  * Shapes and icons for structure and emphasis
+  * Images (e.g., product or Amazon logo)
+  * Color fills and consistent theme for a clean layout
+ 
+ ## Insights Derived
+ 
+Top-performing product categories
+ 
+Price vs. Rating correlation
+ 
+Products with highest discounts
+ 
+Average customer satisfaction metrics
+ 
+
 
     
