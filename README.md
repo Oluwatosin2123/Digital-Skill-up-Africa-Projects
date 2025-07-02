@@ -43,4 +43,19 @@ stored as comma-separated values.
 * Converted data types to appropriate formats (e.g., numbers, dates)
 * Standardized the currency format for price-related columns
 
+## Step 2: Data Analysis
+ 
+1.  Used Pivot Tables to group and summarize data by:
+ * Product category
+ * Ratings
+ * Discount percentage
+ * Price
+ * Applied Excel formulas:
+ * IF() to flag conditions (e.g., high-rated products)
+ * COUNTIF() and SUM() to count and aggregate metrics
+ * AVERAGE() for mean rating and pricing
+ * Percentage calculations for discount and performance insights
+ 
+ 
+
     
