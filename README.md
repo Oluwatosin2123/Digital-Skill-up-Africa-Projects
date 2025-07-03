@@ -128,6 +128,7 @@ The analysis answers key business questions related to sales performance, custom
 ![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/c869092e2d78794604ccf2c677b6a7136486f014/Average%20profit.png)
 
 ![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/6d6e0934b91bca0b958bb9ca0d6a58cb8e7a7706/Count.png)
+![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/2fa903235d515d298656998760605c4fcf355387/Highest%20top%203%20Region.png)
 
 ## Analysis Questions & SQL Queries
 
