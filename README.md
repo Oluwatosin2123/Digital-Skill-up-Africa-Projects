@@ -176,6 +176,7 @@ WHERE Product_Category = (SELECT MAX(Product_Category)
 FROM [dbo].[KMS Sql Case Study2])
 ORDER BY Product_Category
 
+ ### Product Category with Highest Sales 
 SELECT TOP 3 Product_Category AS highest_Product
 FROM [dbo].[KMS Sql Case Study2]
 WHERE Product_Category = (SELECT MAX(Product_Category) 
@@ -195,7 +196,7 @@ WHERE Product_Category = (SELECT MAX(Product_Category)
 FROM [dbo].[KMS Sql Case Study2])
 ORDER BY Product_Category Asc
 
-###  ----Bottom 3 region 
+###  Top 3 and Bottom 3 Regions by Sales
 SELECT Top 3 Region, Sales  AS Lowest_Sales
 FROM [dbo].[KMS Sql Case Study2]
 WHERE Product_Category = (SELECT Min(Product_Category) 
@@ -214,7 +215,9 @@ FROM [dbo].[KMS Sql Case Study2]
 WHERE Product_Category = (SELECT MAX(Product_Category) 
 FROM [dbo].[KMS Sql Case Study2])
 ORDER BY Product_Category Asc
-
+  
+    3.6. [Corporate Customer with Most Orders (2009–2012)](#6-corporate-customer-with-most-orders-2009–2012)  
+    3.7. [Customers Who Returned Items & Their Segment](#7-customers-who-returned-items--their-segment)  
 ###  ----highest Top 3 Product Category in term of Customer Segment and Sales---
 SELECT top 3 Product_Category, Customer_Segment, Sales  AS highest_Sales
 FROM [dbo].[KMS Sql Case Study2]
@@ -267,21 +270,8 @@ from [dbo].[KMS Sql Case Study2]
 group by Ship_Mode
 order by [Average Profit] desc
 
-### -----Most shipping cost--
 
-select Ship_Mode, count(Shipping_Cost) as [Most shipping cost]
-from [dbo].[KMS Sql Case Study2]
-group by Ship_Mode
-order by Ship_Mode desc
-
-select Ship_Mode, count(Shipping_Cost) as [Most shipping cost]
-from [dbo].[KMS Sql Case Study2]
-group by Ship_Mode
-order by Ship_Mode Asc
-
-Select * from [dbo].[KMS Sql Case Study2]
-
-### -----Most Valuable Customers
+### Most Valuable Customer & Their Common Purchases
 
 Select Product_Category, count(Customer_Segment) as [Most Valuable Customer]
 from [dbo].[KMS Sql Case Study2]
@@ -297,7 +287,8 @@ group by Product_Category
 
 Select * from [dbo].[KMS Sql Case Study2]
 
-###  ----Small business customer with highest sales
+### Small Business Customer with Highest Sales
+Select * from [dbo].[KMS Sql Case Study2]
 Select  Product_Category, MAX(Sales) As [MaxSales]
 from [dbo].[KMS Sql Case Study2]
 Where Customer_Segment = 'Small Business'
@@ -305,7 +296,17 @@ group by Product_Category
 
 Select * from [dbo].[KMS Sql Case Study2]
 
+### -----Most shipping cost--
 
+select Ship_Mode, count(Shipping_Cost) as [Most shipping cost]
+from [dbo].[KMS Sql Case Study2]
+group by Ship_Mode
+order by Ship_Mode desc
+
+select Ship_Mode, count(Shipping_Cost) as [Most shipping cost]
+from [dbo].[KMS Sql Case Study2]
+group by Ship_Mode
+order by Ship_Mode Asc
 ----maximum order quantity corporate business between year 2009 and 2012
 
 SELECT Product_Category, MAX(Order_Quantity) AS [Maximum Order Quantity]
@@ -411,5 +412,27 @@ ORDER BY
     Returned_Orders DESC;
 Select * from [dbo].[KMS Sql Case Study2]
 
+
+-----Recommendation
+What the management of KMS can do to increase the revenue from the bottom 
+10 customers -----
+* Set a target for the top 4 from the bottom Revenue---
+* Revenue_Gap AS (
+    SELECT 
+        5500000.0 * 4 AS Target_Revenue,
+        t.Bottom_Total_Revenue,
+        (5500000.0 * 4) - t.Bottom_Total_Revenue AS Revenue_Gap
+    FROM Total_Bottom_Revenue t
+)
+-- Final Output
+  ----  Target_Revenue,
+ ---- Bottom_Total_Revenue,
+ --- Revenue_Gap
+  ---FROM Revenue_Gap;
+----Recommendation
+If the delivery truck is the most economical but the slowest shipping method and 
+* Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer
+
+*Since the Express Air and Regular Air has more high order priority and order count Kultra Iventory should increase the shipping costbase on the Order Quantity so that the company will have a profitable gain and not lost.
 
     
