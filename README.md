@@ -79,7 +79,7 @@ stored as comma-separated values.
   * Color fills and consistent theme for a clean layout
   *  -  Excel Analysis [Download Here]https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/main/Amazon%20project%20Cases%20Study%20One.xlsx
        
-![image alt]
+![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/1786cc85ab6f38a7ff6d7930c6eaddcfc0d11a31/Amazon%20Retail%20product%20Dashboard.png)
  
  ## Insights Derived
  * Top-performing product categories
