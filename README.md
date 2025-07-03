@@ -78,6 +78,7 @@ stored as comma-separated values.
   * Images (e.g., products or Amazon logo)
   * Color fills and consistent theme for a clean layout
   *  -  Excel Analysis [Download Here]https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/main/Amazon%20project%20Cases%20Study%20One.xlsx
+       
     ![image alt]([[image_url](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/a0c8c47b007809011360dd176d69eff280cf0bd2/Screenshot%20(40).png)]
  
  ## Insights Derived
@@ -156,7 +157,7 @@ Select Customer_Segment, count( Customer_Segment) as [Total Customer segment]
 from [dbo].[KMS Sql Case Study2]
 group by Customer_Segment
 Order by [Total Customer Segment] desc
-![image alt]([[[image_url](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/6d6e0934b91bca0b958bb9ca0d6a58cb8e7a7706/Count.png)]
+![image alt]([[image_url](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/6d6e0934b91bca0b958bb9ca0d6a58cb8e7a7706/Count.png)]
 
 Select Customer_Segment, count( Customer_Segment) as [Total Customer segment]
 from [dbo].[KMS Sql Case Study2]
