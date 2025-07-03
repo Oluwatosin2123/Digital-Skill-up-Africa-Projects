@@ -21,7 +21,7 @@ The dataset contains information scraped from Amazon products
 * Each row represents a unique product, with aggregated reviewer data 
 stored as comma-separated values. 
 * Total Records: 1,465, TotalFields: 16 columns 
-### Analysis Tasks 
+### Project Objective.
 1. What is the average discount percentage by product category? 
 2. How many products are listed under each category? 
 3. What is the total number of reviews per category?  
@@ -60,7 +60,9 @@ stored as comma-separated values.
  * Product category
  * Ratings
  * Discount percentage
- * Price
+ * Actual Price
+ * Count of Reviews
+ * Discount level( price range bucket)
 2.  Applied Excel formulas:
  * IF() to flag conditions (e.g., high-rated products)
  * COUNTIF() and SUM() to count and aggregate metrics
