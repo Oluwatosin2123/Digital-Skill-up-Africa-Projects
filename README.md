@@ -123,6 +123,12 @@ The analysis answers key business questions related to sales performance, custom
 - `order_details(order_id, product_id, quantity, price)`
 - `returns(order_id, return_date)`
 
+### Image Attach Result Image Attach
+
+![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/c869092e2d78794604ccf2c677b6a7136486f014/Average%20profit.png)
+
+![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/6d6e0934b91bca0b958bb9ca0d6a58cb8e7a7706/Count.png)
+
 ## Analysis Questions & SQL Queries
 
 ```sql
@@ -403,13 +409,6 @@ GROUP BY
 ORDER BY 
     Returned_Orders DESC;
 Select * from [dbo].[KMS Sql Case Study2]
-
-
-### Image Attach Result Image Attach
-
-![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/c869092e2d78794604ccf2c677b6a7136486f014/Average%20profit.png)
-
-![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/6d6e0934b91bca0b958bb9ca0d6a58cb8e7a7706/Count.png)
 
 
     
