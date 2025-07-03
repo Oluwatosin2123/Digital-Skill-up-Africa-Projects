@@ -9,7 +9,7 @@
 - [Insights Derived](#insights-derived)
 - [Final Dashboard](#final-dashboard)
 - [Files in this Repository](#files-in-this-repository)
-- [Author](#author)
+- [Oluwatosin Moses Adebayo](#author)
 
 ### Project Overview
  
@@ -75,7 +75,7 @@ stored as comma-separated values.
  
   * Charts (bar, pie, line) for key insights
   * Shapes and icons for structure and emphasis
-  * Images (e.g., product or Amazon logo)
+  * Images (e.g., products or Amazon logo)
   * Color fills and consistent theme for a clean layout
  
  ## Insights Derived
@@ -83,6 +83,8 @@ stored as comma-separated values.
  * Price vs. Rating correlation
  * Products with highest discounts
  * Average customer satisfaction metrics
+### Files in this Repository 
+## Oluwatosin Moses Adebayo
 
 
 # Kultra Inventory Analysis using SQL
