@@ -155,6 +155,7 @@ Select Customer_Segment, count( Customer_Segment) as [Total Customer segment]
 from [dbo].[KMS Sql Case Study2]
 group by Customer_Segment
 Order by [Total Customer Segment] desc
+![image alt]([[image_url]
 
 Select Customer_Segment, count( Customer_Segment) as [Total Customer segment]
 from [dbo].[KMS Sql Case Study2]
