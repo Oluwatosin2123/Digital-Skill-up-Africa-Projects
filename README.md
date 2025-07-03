@@ -176,7 +176,6 @@ FROM [dbo].[KMS Sql Case Study2]
 WHERE Product_Category = (SELECT MAX(Product_Category) 
 FROM [dbo].[KMS Sql Case Study2])
 ORDER BY Product_Category Asc;
-Screenshot (46).png
 
  ### ----highest Top 3 Region in term of Sales---
 SELECT Top 3 Region, Sales  AS highest_Sales
@@ -204,7 +203,6 @@ FROM [dbo].[KMS Sql Case Study2]
 WHERE Product_Category = (SELECT MAX(Product_Category) 
 FROM [dbo].[KMS Sql Case Study2])
 ORDER BY Product_Category Asc
-
 
 ###  ----highest Top 3 Product Category in term of Customer Segment and Sales---
 SELECT top 3 Product_Category, Customer_Segment, Sales  AS highest_Sales
