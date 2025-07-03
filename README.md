@@ -1,5 +1,16 @@
 # Digital-Skill-up-Africa-Projects
-## Amazon Product Data Analysis – Excel Project
+## Amazon Product Data Analysis – Excel Project 
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Tools Used](#tools-used)
+- [Step 1: Data Cleaning](#step-1-data-cleaning)
+- [Step 2: Data Analysis](#step-2-data-analysis)
+- .[Step 3: Dashboard Creation](#step-3-dashboard-creation)
+- [Insights Derived](#insights-derived)
+- [Final Dashboard](#final-dashboard)
+- [Files in this Repository](#files-in-this-repository)
+- [Author](#author)
+
 ### Project Overview
  
 This project focuses on analyzing Amazon product data using Excel tools like Power Query Editor, Pivot Tables, and Dashboarding. The goal was to clean, analyze, and visualize key insights from customer reviews, product ratings, and pricing data.
@@ -44,19 +55,19 @@ stored as comma-separated values.
 * Standardized the currency format for price-related columns
 
 ## Step 2: Data Analysis
- 
-### Used Pivot Tables to group and summarize data by:
+ ### Exploratory Data Analysis 
+1. Used Pivot Tables to group and summarize data by:
  * Product category
  * Ratings
  * Discount percentage
  * Price
- * Applied Excel formulas:
+2.  Applied Excel formulas:
  * IF() to flag conditions (e.g., high-rated products)
  * COUNTIF() and SUM() to count and aggregate metrics
  * AVERAGE() for mean rating and pricing
  * Percentage calculations for discount and performance insights
  
- ## Dashboard Creation
+ ## Step 3: Dashboard Creation
  ### Designed an interactive and visually appealing Excel dashboard
  Added:
  
@@ -66,14 +77,10 @@ stored as comma-separated values.
   * Color fills and consistent theme for a clean layout
  
  ## Insights Derived
- 
-Top-performing product categories
- 
-Price vs. Rating correlation
- 
-Products with highest discounts
- 
-Average customer satisfaction metrics
+ * Top-performing product categories
+ * Price vs. Rating correlation
+ * Products with highest discounts
+ * Average customer satisfaction metrics
  
 
 
