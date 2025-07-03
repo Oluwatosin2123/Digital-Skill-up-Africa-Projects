@@ -77,6 +77,7 @@ stored as comma-separated values.
   * Shapes and icons for structure and emphasis
   * Images (e.g., products or Amazon logo)
   * Color fills and consistent theme for a clean layout
+    ![image alt]([image_url](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/e1b90da211fd567379e7541a539aa096d1cc6e62/Screenshot%20(40).png))
  
  ## Insights Derived
  * Top-performing product categories
@@ -84,6 +85,8 @@ stored as comma-separated values.
  * Products with highest discounts
  * Average customer satisfaction metrics
 ### Files in this Repository 
+
+
 ## Oluwatosin Moses Adebayo
 
 
