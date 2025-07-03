@@ -105,17 +105,16 @@ stored as comma-separated values.
     3.5. [Small Business Customer with Highest Sales](#5-small-business-customer-with-highest-sales)  
     3.6. [Corporate Customer with Most Orders (2009–2012)](#6-corporate-customer-with-most-orders-2009–2012)  
     3.7. [Customers Who Returned Items & Their Segment](#7-customers-who-returned-items--their-segment)  
-4. [Technologies Used](#technologies-used)  
-5. [Key Takeaways](#key-takeaways)  
-6. [Result Image Attach](#Result)  
-7. [Contributing](#contributing)
+     4. [Result Image Attach](#Result)  
+   5. [Contributing](#contributing)
 
-This project presents a comprehensive analysis of Kultra's inventory and sales data using SQL. The analysis answers key business questions related to sales performance, customer behavior, and product segmentation.
-
+This project presents a comprehensive analysis of Kultra's inventory and sales data using SQL. 
+The analysis answers key business questions related to sales performance, customer behavior, and product segmentation.
 
 ## Dataset Overview
 
-* This analysis assumes data is available in a relational database with tables such as `sales`, `products`, `customers`, `orders`, and `returns`. Schema is included below.*
+* This analysis assumes data is available in a relational database with tables such as
+( `sales`, `products`, `customers`, `orders`, and `returns`.) 
 
 ### Example Tables:
 - `products(product_id, name, category, sub_category)`
@@ -157,8 +156,6 @@ Select Customer_Segment, count( Customer_Segment) as [Total Customer segment]
 from [dbo].[KMS Sql Case Study2]
 group by Customer_Segment
 Order by [Total Customer Segment] desc
-
-![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/6d6e0934b91bca0b958bb9ca0d6a58cb8e7a7706/Count.png)
 
 Select Customer_Segment, count( Customer_Segment) as [Total Customer segment]
 from [dbo].[KMS Sql Case Study2]
@@ -408,8 +405,10 @@ ORDER BY
 Select * from [dbo].[KMS Sql Case Study2]
 
 
-### Image Attach Result Image Attach
-[image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/c869092e2d78794604ccf2c677b6a7136486f014/Average%20profit.png)
+###
+Image Attach Result Image Attach
+![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/c869092e2d78794604ccf2c677b6a7136486f014/Average%20profit.png)
+
 
 
     
