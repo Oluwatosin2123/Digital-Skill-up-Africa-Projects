@@ -83,7 +83,318 @@ stored as comma-separated values.
  * Price vs. Rating correlation
  * Products with highest discounts
  * Average customer satisfaction metrics
+
+
+# Kultra Inventory Analysis using SQL
+
+This project presents a comprehensive analysis of Kultra's inventory and sales data using SQL. The analysis answers key business questions related to sales performance, customer behavior, and product segmentation.
+
+
+## Dataset Overview
+
+* This analysis assumes data is available in a relational database with tables such as `sales`, `products`, `customers`, `orders`, and `returns`. Schema is included below.*
+
+### Example Tables:
+- `products(product_id, name, category, sub_category)`
+- `customers(customer_id, name, segment, business_type, region)`
+- `orders(order_id, customer_id, order_date, region, status)`
+- `order_details(order_id, product_id, quantity, price)`
+- `returns(order_id, return_date)`
+
+## Analysis Questions & SQL Queries
+
+### 1. Product Category with Highest Sales
+
+```sql
+SELECT 
+   Select * from [dbo].[KMS Sql Case Study2]
+
+
+Update table [dbo].[KMS Sql Case Study2]
+---- correcting the data type---
+Alter table [dbo].[KMS Sql Case Study2]
+Alter column Sales decimal (18, 2)
+
+Alter table [dbo].[KMS Sql Case Study2]
+Alter column Discount decimal (18, 2)
+
+Alter table [dbo].[KMS Sql Case Study2]
+Alter column Product_Base_Margin decimal (18, 2)
+
+Alter table [dbo].[KMS Sql Case Study2]
+Alter column Product_Base_Margin decimal (18, 3)
+
+Select * from [dbo].[KMS Sql Case Study2]
+
  
+ -----count distinct-----
+Select Customer_Segment, count(distinct Customer_Segment) as [Total Customer segment]
+from [dbo].[KMS Sql Case Study2]
+group by Customer_Segment
+Order by [Total Customer Segment] desc
+------ count----
+Select Customer_Segment, count( Customer_Segment) as [Total Customer segment]
+from [dbo].[KMS Sql Case Study2]
+group by Customer_Segment
+Order by [Total Customer Segment] desc
+
+Select Customer_Segment, count( Customer_Segment) as [Total Customer segment]
+from [dbo].[KMS Sql Case Study2]
+group by Customer_Segment
+Order by [Total Customer Segment] Asc
+
+
+
+-----Top product category----
+SELECT TOP 3 Product_Category, Customer_Segment, Sales  AS highest_Product
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Product_Category = (SELECT MAX(Product_Category) 
+FROM [dbo].[KMS Sql Case Study2])
+ORDER BY Product_Category
+
+SELECT TOP 3 Product_Category AS highest_Product
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Product_Category = (SELECT MAX(Product_Category) 
+FROM [dbo].[KMS Sql Case Study2])
+ORDER BY Product_Category DESC
+
+SELECT TOP 3 Product_Category,Customer_Segment, Sales  AS highest_Product
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Product_Category = (SELECT MAX(Product_Category) 
+FROM [dbo].[KMS Sql Case Study2])
+ORDER BY Product_Category Asc;
+
+ 
+
+----highest Top 3 Region in term of Sales---
+SELECT Top 3 Region, Sales  AS highest_Sales
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Product_Category = (SELECT MAX(Product_Category) 
+FROM [dbo].[KMS Sql Case Study2])
+ORDER BY Product_Category Asc
+
+----Bottom 3 region 
+SELECT Top 3 Region, Sales  AS Lowest_Sales
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Product_Category = (SELECT Min(Product_Category) 
+FROM [dbo].[KMS Sql Case Study2])
+ORDER BY Product_Category Asc
+
+----Top 3 region in term of Product Category
+SELECT TOP 3 Product_Category, Region, Sales  AS highest_Product
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Product_Category = (SELECT MAX(Product_Category) 
+FROM [dbo].[KMS Sql Case Study2])
+ORDER BY Product_Category Desc
+
+SELECT TOP 3 Product_Category, Region, Sales  AS highest_Product
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Product_Category = (SELECT MAX(Product_Category) 
+FROM [dbo].[KMS Sql Case Study2])
+ORDER BY Product_Category Asc
+
+
+----highest Top 3 Product Category in term of Customer Segment and Sales---
+SELECT top 3 Product_Category, Customer_Segment, Sales  AS highest_Sales
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Product_Category = (SELECT MAX(Product_Category) 
+FROM [dbo].[KMS Sql Case Study2])
+ORDER BY Product_Category asc
+
+-------Maximum product by Region, Profit and Sales
+SELECT TOP 3 Product_Category, Region, Profit, Sales 
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Product_Category = (SELECT MAX(Product_Category) 
+FROM [dbo].[KMS Sql Case Study2])
+ORDER BY Product_Category Asc
+
+SELECT TOP 3 Product_Category, Region, Profit, Sales 
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Product_Category = (SELECT MAX(Product_Category) 
+FROM [dbo].[KMS Sql Case Study2])
+ORDER BY Product_Category Asc
+
+Select * from [dbo].[KMS Sql Case Study2]
+
+-----Total Sales by Region----
+Select Region, sum(Sales) as [Total Sales]
+from [dbo].[KMS Sql Case Study2]
+group by Region
+order by [Total sales] desc
+Select * from [dbo].[KMS Sql Case Study2] 
+
+
+---Total Sales by Ontario--
+
+Select Region, sum(Sales) as [Total Sales]
+from [dbo].[KMS Sql Case Study2]
+Where Region = 'Ontario'
+group by Region
+order by [Total sales] 
+
+Select * from [dbo].[KMS Sql Case Study]
+----Total Profit----
+Select Ship_Mode , Sum(Profit) as [Total Profit]
+from [dbo].[KMS Sql Case Study2]
+group by Ship_Mode
+order by [Total Profit] Asc
+
+
+----- Average Profit--
+Select Ship_Mode , AVG(Profit) as [Average Profit]
+from [dbo].[KMS Sql Case Study2]
+group by Ship_Mode
+order by [Average Profit] desc
+
+-----Most shipping cost--
+
+select Ship_Mode, count(Shipping_Cost) as [Most shipping cost]
+from [dbo].[KMS Sql Case Study2]
+group by Ship_Mode
+order by Ship_Mode desc
+
+
+select Ship_Mode, count(Shipping_Cost) as [Most shipping cost]
+from [dbo].[KMS Sql Case Study2]
+group by Ship_Mode
+order by Ship_Mode Asc
+
+Select * from [dbo].[KMS Sql Case Study2]
+
+
+-----Most Valuable Customers
+
+Select Product_Category, count(Customer_Segment) as [Most Valuable Customer]
+from [dbo].[KMS Sql Case Study2]
+group by Product_Category
+Order by [Most Valuable Customer] desc
+
+Select * from [dbo].[KMS Sql Case Study2]
+
+Select Product_Category, MAX(Customer_Segment)
+AS [Most Valuable Customer],count(Customer_Segment) As[Total Customers]
+from [dbo].[KMS Sql Case Study2]
+group by Product_Category
+
+Select * from [dbo].[KMS Sql Case Study2]
+
+----Small business customer with highest sales
+Select  Product_Category, MAX(Sales) As [MaxSales]
+from [dbo].[KMS Sql Case Study2]
+Where Customer_Segment = 'Small Business'
+group by Product_Category
+
+Select * from [dbo].[KMS Sql Case Study2]
+
+
+----maximum order quantity corporate business between year 2009 and 2012
+
+SELECT Product_Category, MAX(Order_Quantity) AS [Maximum Order Quantity]
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Customer_Segment = 'Corporate'
+  AND YEAR(Order_Date) BETWEEN 2009 AND 2012
+group by Product_Category
+
+Select * from [dbo].[KMS Sql Case Study2]
+
+----- Total profit WHERE Customer Segment = 'Consumer'
+SELECT Product_Category, Sum(Profit) AS [Total Profit]
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Customer_Segment = 'Consumer'
+group by Product_Category
+
+----- Total profit WHERE Customer Segment = 'Small Business'
+SELECT Product_Category, Sum(Profit) AS [Total Profit]
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Customer_Segment = 'Small Business'
+group by Product_Category
+
+----- Total profit WHERE Customer Segment = 'Corporate'
+SELECT Product_Category, Sum(Profit) AS [Total Profit]
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Customer_Segment = 'Corporate'
+group by Product_Category
+
+------Profit WHERE consumer is more profitable'
+SELECT Top 1 Product_Category, Max(Profit) AS [Maximum Profit]
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Customer_Segment = 'Consumer'
+group by Product_Category
+
+Select * from  [dbo].[KMS Sql Case Study2]
+
+-----Small business customer with highest Sales---
+SELECT Top 1 Product_Category, Max(Sales) AS [Maximum Sales]
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Customer_Segment = 'Small business'
+group by Product_Category
+
+----- Corporate Customer that placed the most number of orders in 2009 – 2012---
+
+SELECT Product_Category, YEAR(Order_Date) AS Order_Year,
+  MAX(Order_Quantity) AS [Maximum Order Quantity]
+FROM [dbo].[KMS Sql Case Study2]
+WHERE Customer_Segment = 'Corporate'
+  AND YEAR(Order_Date) BETWEEN 2009 AND 2012
+GROUP BY Product_Category, YEAR(Order_Date)
+ORDER BY Product_Category, Order_Year;
+
+
+	
+Select * From [dbo].[Order_Status]
+
+	----- Total Status-----
+Select Status,
+count(Status) AS Status_Count
+ From [dbo].[Order_Status]
+ GROUP BY Status
+Order by Status;
+
+------------ Total Status by Order ID-----
+Select Order_ID,
+count(Status) AS Status_Count
+ From [dbo].[Order_Status]
+ GROUP BY Order_ID
+Order by Order_ID Asc
+
+
+-------Join Main table with order status---
+SELECT 
+    os.Order_ID,
+    os.Status,
+    o.Customer_Name,
+    o.Order_Date,
+    o.Sales,
+	o.Product_Category,
+	o.Customer_Segment,
+	o.Region
+FROM 
+    [dbo].[Order_Status] AS os
+JOIN 
+    [dbo].[KMS Sql Case Study2] AS o
+    ON os.Order_ID = o.Order_ID
+ORDER BY 
+    os.Order_ID;
+
+-------Customer that returned items, Segment-----
+SELECT 
+    o.Customer_Segment,
+    COUNT(o.Order_ID) AS Returned_Orders
+FROM 
+    [dbo].[KMS Sql Case Study2] AS o
+JOIN 
+    [dbo].[Order_Status] AS os
+    ON o.Order_ID = os.Order_ID
+WHERE 
+    os.Status = 'Returned'
+GROUP BY 
+    o.Customer_Segment
+ORDER BY 
+    Returned_Orders DESC;
+
+Select * from [dbo].[KMS Sql Case Study2]
+
+
 
 
     
