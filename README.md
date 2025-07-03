@@ -96,8 +96,9 @@ stored as comma-separated values.
 ## Table of Contents
 
 1. [Project Overview](#project-overview)  
-2. [Dataset Overview](#dataset-overview)  
-3. [Analysis Questions & SQL Queries](#analysis-questions--sql-queries)  
+2. [Dataset Overview](#dataset-overview)
+3. [Result Image Attach](#Result)   
+4. [Analysis Questions & SQL Queries](#analysis-questions--sql-queries)  
     3.1. [Product Category with Highest Sales](#1-product-category-with-highest-sales)  
     3.2. [Top 3 and Bottom 3 Regions by Sales](#2-top-3-and-bottom-3-regions-by-sales)  
     3.3. [Total Sales of Appliances in Ontario](#3-total-sales-of-appliances-in-ontario)  
@@ -105,8 +106,7 @@ stored as comma-separated values.
     3.5. [Small Business Customer with Highest Sales](#5-small-business-customer-with-highest-sales)  
     3.6. [Corporate Customer with Most Orders (2009–2012)](#6-corporate-customer-with-most-orders-2009–2012)  
     3.7. [Customers Who Returned Items & Their Segment](#7-customers-who-returned-items--their-segment)  
-     4. [Result Image Attach](#Result)  
-   5. [Contributing](#contributing)
+    4. [Recommendation](#contributing)
 
 This project presents a comprehensive analysis of Kultra's inventory and sales data using SQL. 
 The analysis answers key business questions related to sales performance, customer behavior, and product segmentation.
