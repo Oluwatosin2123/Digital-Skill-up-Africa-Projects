@@ -102,7 +102,7 @@ stored as comma-separated values.
     3.7. [Customers Who Returned Items & Their Segment](#7-customers-who-returned-items--their-segment)  
 4. [Technologies Used](#technologies-used)  
 5. [Key Takeaways](#key-takeaways)  
-6. [Folder Structure](#folder-structure)  
+6. [Result Image Attach](#Result)  
 7. [Contributing](#contributing)
 
 This project presents a comprehensive analysis of Kultra's inventory and sales data using SQL. The analysis answers key business questions related to sales performance, customer behavior, and product segmentation.
@@ -400,7 +400,27 @@ ORDER BY
     Returned_Orders DESC;
 
 Select * from [dbo].[KMS Sql Case Study2]
-
+### Image AttachResult Image Attach
+![Image](https://github.com/user-attachments/assets/23ff6cf3-f536-40e5-9d52-4d9f31283f7a)
+![Image](https://github.com/user-attachments/assets/fc0a879d-d099-484f-adf6-f8a4d735611b)
+![Image](https://github.com/user-attachments/assets/faa3ab7f-2ff8-40f3-b8d8-0f8bd74c2dbe)
+![Image](https://github.com/user-attachments/assets/30e729d9-c132-4f06-91ef-1f1619e2759b)
+![Image](https://github.com/user-attachments/assets/457e217d-1ad2-4c0e-8080-4fcb205617ef)
+![Image](https://github.com/user-attachments/assets/b2f1c1cf-ddf0-4e20-a6ac-aed6103e68af)
+![Image](https://github.com/user-attachments/assets/3aefc1b2-e21b-40db-b140-a585dbfdd297)
+![Image](https://github.com/user-attachments/assets/aeff59e6-8c39-4c04-a6a3-e332edee2f26)
+![Image](https://github.com/user-attachments/assets/b83228be-f66d-4430-8cf5-98200031ea39)
+![Image](https://github.com/user-attachments/assets/ac8bacde-eec4-4709-bae4-90ef8c531073)
+![Image](https://github.com/user-attachments/assets/38edbae8-1c11-4675-9c89-629fc13e2fed)
+![Image](https://github.com/user-attachments/assets/e1f99b89-1173-4464-99ce-371d8b5630db)
+![Image](https://github.com/user-attachments/assets/32f2051a-9ba9-4e8c-9d32-cccc386f1173)
+![Image](https://github.com/user-attachments/assets/11c4df25-429c-4f2d-bc70-360ddc9f2a3e)
+![Image](https://github.com/user-attachments/assets/f3e2f15f-6e15-40fe-8090-493412113e85)
+![Image](https://github.com/user-attachments/assets/d03e0f58-616e-4c08-bee4-74327df3074f)
+![Image](https://github.com/user-attachments/assets/4915eee3-8478-4a44-b045-5655882d80cb)
+![Image](https://github.com/user-attachments/assets/4f3e8fa3-d8c7-477d-b3e6-5a3ff48b42b6)
+![Image](https://github.com/user-attachments/assets/5dccc8dc-e0cd-4de3-8793-d29e371693b5)
+![Image](https://github.com/user-attachments/assets/180dd11c-1ab7-44b3-bee5-b3bf75c685d3)
 
 
 
