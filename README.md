@@ -157,7 +157,7 @@ Select Customer_Segment, count( Customer_Segment) as [Total Customer segment]
 from [dbo].[KMS Sql Case Study2]
 group by Customer_Segment
 Order by [Total Customer Segment] desc
-![image alt]([[image_url](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/6d6e0934b91bca0b958bb9ca0d6a58cb8e7a7706/Count.png)]
+![image alt]([image_url](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/6d6e0934b91bca0b958bb9ca0d6a58cb8e7a7706/Count.png))
 
 Select Customer_Segment, count( Customer_Segment) as [Total Customer segment]
 from [dbo].[KMS Sql Case Study2]
