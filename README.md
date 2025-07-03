@@ -409,7 +409,7 @@ Select * from [dbo].[KMS Sql Case Study2]
 
 
 ### Image Attach Result Image Attach
-[image alt](image_url)
+[image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/c869092e2d78794604ccf2c677b6a7136486f014/Average%20profit.png)
 
 
     
