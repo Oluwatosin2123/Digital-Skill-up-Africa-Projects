@@ -68,6 +68,9 @@ stored as comma-separated values.
  * COUNTIF() and SUM() to count and aggregate metrics
  * AVERAGE() for mean rating and pricing
  * Percentage calculations for discount and performance insights
+
+    ### Products Price Overview and Total Review
+ ![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/98f056f15b6c504c8c2d6bcd58c6a84a327687bf/Product%20Price%20overview.png)
  
  ## Step 3: Dashboard Creation
  ### Designed an interactive and visually appealing Excel dashboard
