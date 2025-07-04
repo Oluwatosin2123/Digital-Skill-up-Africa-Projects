@@ -7,7 +7,7 @@
 - [Step 2: Data Analysis](#step-2-data-analysis)
 - .[Step 3: Dashboard Creation](#step-3-dashboard-creation)
 - [Insights Derived](#insights-derived)
-- [Final Dashboard](#final-dashboard)
+  
 - [Files in this Repository](#files-in-this-repository)
 - [Oluwatosin Moses Adebayo(Author)](#author)
 
