@@ -76,7 +76,8 @@ stored as comma-separated values.
 ### Products Category and Customer Segment.
 ![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/080b7d104dabd55e0f415744f5c3d4a192a402af/Customer%20segment%20by%20Category.png)
 
- ![image alt]
+### Pivot Tables
+ ![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/09d425a2d164963fc21220094533f8bbe464fb51/PivotTables.png)
 
  ## Step 3: Dashboard Creation
  ### Designed an interactive and visually appealing Excel dashboard
