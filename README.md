@@ -79,6 +79,8 @@ stored as comma-separated values.
 ### Pivot Tables
  ![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/09d425a2d164963fc21220094533f8bbe464fb51/PivotTables.png)
 
+![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/3cabe0384eb7a5afbeebff328271d8e5625b671a/Pivot%20Tables.png)
+
  ## Step 3: Dashboard Creation
  ### Designed an interactive and visually appealing Excel dashboard
  Added:
@@ -87,15 +89,32 @@ stored as comma-separated values.
   * Shapes and icons for structure and emphasis
   * Images (e.g., products or Amazon logo)
   * Color fills and consistent theme for a clean layout
+  * Slicer style settings
+  * Inserting Pictures, and other visualization format.
 
        
 ![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/1786cc85ab6f38a7ff6d7930c6eaddcfc0d11a31/Amazon%20Retail%20product%20Dashboard.png)
  
+ ### Using the logical/conditional functions
+    =IF(Discounted price < 200%, " Low", IF (Discounted price <5000, " Meduim", IF (Discounted price <10000, "High", "Very High" )))
+    =Countif(Rating, Criteria)
+    =Sum(Values)
+    =Average(sum(values))
+    
+    ### Pivot Field list and other formats.
+    * Selecting the Row, values, Columns and filter.
+    * Sumarization.
+    * Sorting Values ( Ascending or descending Order)
+    * Number and Label filter.
+    * Format Cell : changing currency types from Dollars to English(India) Rupee.
+    * Value field settings for changing Data type.
+    
  ## Insights Derived
  * Top-performing product categories
  * Price vs. Rating correlation
  * Products with highest discounts
  * Average customer satisfaction metrics
+
 ### Files in this Repository 
 *  -  Excel Analysis [Download Here]https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/main/Amazon%20project%20Cases%20Study%20One.xlsx
 
