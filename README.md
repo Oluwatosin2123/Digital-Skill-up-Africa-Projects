@@ -69,10 +69,12 @@ stored as comma-separated values.
  * AVERAGE() for mean rating and pricing
  * Percentage calculations for discount and performance insights
 
-    ### Products Price Overview and Total Reviews
+    ### Products Price Overview and Total Reviews.
  ![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/98f056f15b6c504c8c2d6bcd58c6a84a327687bf/Product%20Price%20overview.png)
 
-![image alt]
+
+### Products Category and Customer Segment.
+![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/080b7d104dabd55e0f415744f5c3d4a192a402af/Customer%20segment%20by%20Category.png)
 
  ![image alt]
 
