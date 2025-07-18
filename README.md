@@ -93,7 +93,7 @@ stored as comma-separated values.
   * Inserting Pictures, and other visualization format.
 
        
-![image alt](https://github.com/Oluwatosin2123/Digital-Skill-up-Africa-Projects/blob/1786cc85ab6f38a7ff6d7930c6eaddcfc0d11a31/Amazon%20Retail%20product%20Dashboard.png)
+![image alt]
  
  ### Using the logical/conditional functions
     =IF(Discounted price < 200%, " Low", IF (Discounted price <5000, " Meduim", IF (Discounted price <10000, "High", "Very High" )))
